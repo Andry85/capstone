@@ -1,6 +1,8 @@
 import { Fragment, useContext } from 'react';
 import {Outlet, Link} from 'react-router-dom';
 import './navigation.styles.scss';
+import CartIcon from '../../components/cart-icon/cart-icon.component';
+import CardDropdown from '../../components/card-dropdown/card-dropdown.component';
 
 import { ReactComponent as CrwnLogo } from '../../assets/crown.svg';
 import {UserContext} from "../../contexts/users.context";
@@ -29,8 +31,9 @@ const Navigation = () => {
                         </Link>
                     )
                 }
-                
+                <CartIcon/>
             </div>
+            <CardDropdown/>
         </div>
         <Outlet/>
       </Fragment>
