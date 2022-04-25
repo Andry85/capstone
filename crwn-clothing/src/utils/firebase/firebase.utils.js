@@ -1,3 +1,4 @@
+//firebase account: shappovala@gmail.com
 import {initializeApp} from 'firebase/app';
 import {
   getAuth, 
@@ -21,12 +22,12 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCEUTvgfd6EPQKcpu8AbaQVUK__Nq6qZzg",
-    authDomain: "crwn-clothing-db-9e875.firebaseapp.com",
-    projectId: "crwn-clothing-db-9e875",
-    storageBucket: "crwn-clothing-db-9e875.appspot.com",
-    messagingSenderId: "583518348880",
-    appId: "1:583518348880:web:cfc9cc85592c9a09095355"
+    apiKey: "AIzaSyA1D434m3xoFS8NJJ3xOpoe-HfgIUdJ5_0",
+    authDomain: "capstone-f7203.firebaseapp.com",
+    projectId: "capstone-f7203",
+    storageBucket: "capstone-f7203.appspot.com",
+    messagingSenderId: "770752780969",
+    appId: "1:770752780969:web:eb06844e9c24dadbcc67b8"
   };
   
   // Initialize Firebase
@@ -48,7 +49,7 @@ const firebaseConfig = {
   export const addCollectionAndDocuments = async (
     collectionKey, 
     objectsToAdd,
-    field = 'title'
+    field
     ) => {
     const collectionRef = collection(db, collectionKey);
     const batch = writeBatch(db);
