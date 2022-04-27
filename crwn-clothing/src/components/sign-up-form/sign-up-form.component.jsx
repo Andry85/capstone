@@ -4,7 +4,7 @@ import {createAuthUserWithEmailAndPassword, createUserDocumentfromAuth} from '..
 import './sign-up-form.styles.scss';
 
 import FormInput from "../form-input/form-input.component";
-import Button from "../button/button.component";
+import Button, {BUTTON_TYPE_CLASSES} from "../button/button.component";
 
 
 
@@ -69,7 +69,7 @@ const SignUpForm = () => {
                 <FormInput label="Email" type="email" required onChange={handleChange} name="email" value={email} />
                 <FormInput label="Password" type="password" required onChange={handleChange} name="password" value={password} />
                 <FormInput label="Confirm password" type="password" required onChange={handleChange} name="confirmPassword" value={confirmPassword} />
-                <Button buttonType='google' type="submit">Sign Up</Button>
+                <Button buttonType={BUTTON_TYPE_CLASSES.google} type="submit">Sign Up</Button>
             </form>
         </div>
     )
