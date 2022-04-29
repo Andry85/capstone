@@ -1,5 +1,5 @@
 import { Fragment, useContext } from 'react';
-import {Outlet, Link} from 'react-router-dom';
+import {Outlet} from 'react-router-dom';
 import CartIcon from '../../components/cart-icon/cart-icon.component';
 import CardDropdown from '../../components/card-dropdown/card-dropdown.component';
 
