@@ -1,10 +1,10 @@
+import {USER_ACTION_TYPE} from './user.types';
+
 const INITIAL_STATE = {
     currentUser: null
 }
 
-export const USER_ACTION_TYPE = {
-    SET_CURRENT_USER: 'SET_CURRENT_USER'
-}
+
 
 export const userReducer = (state =  INITIAL_STATE, action) => {
     console.log('dispatched');

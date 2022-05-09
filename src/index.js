@@ -7,7 +7,6 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
 import {Provider} from 'react-redux';
 
-import {UserProvider} from "./contexts/users.context";
 import {CategoriesProvider} from "./contexts/categories.context";
 import {CartProvider} from "./contexts/cart.context";
 import {store} from './store/store';
@@ -17,13 +16,11 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-        <UserProvider>
-          <CategoriesProvider>
-            <CartProvider>
-              <App />
-            </CartProvider>
-          </CategoriesProvider>
-        </UserProvider>
+        <CategoriesProvider>
+          <CartProvider>
+            <App />
+          </CartProvider>
+        </CategoriesProvider>
       </BrowserRouter>
     </Provider>
   </React.StrictMode>,
